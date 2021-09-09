@@ -1,12 +1,13 @@
 import argparse
+import datetime
 
 from minizinc import Instance, Model, Solver
 
 from visualize import visualize_instance
 
 
-def run_instance(inst: int, visualize=True):
-    with open(f'../../instances/ins-{inst}.txt', 'r') as file:
+def run_instance(instance: int, timeout=5, visualize=True):
+    with open(f'../instances/ins-{instance}.txt', 'r') as file:
         lines = file.readlines()
 
     width = int(lines[0])
@@ -25,21 +26,21 @@ def run_instance(inst: int, visualize=True):
     # Find the MiniZinc solver configuration for Gecode
     gecode = Solver.lookup('gecode')
     # Create an Instance of the model for Gecode
-    instance = Instance(gecode, model)
+    problem_instance = Instance(gecode, model)
 
-    instance['width'] = width
-    instance['n'] = n
-    instance['W'] = block_width
-    instance['H'] = block_height
+    problem_instance['width'] = width
+    problem_instance['n'] = n
+    problem_instance['W'] = block_width
+    problem_instance['H'] = block_height
 
-    result = instance.solve()
+    result = problem_instance.solve(timeout=datetime.timedelta(minutes=timeout))
 
     # Output
     height = result['objective']
     block_x = result['X']
     block_y = result['Y']
 
-    out_filename = f'../out/out-{inst}.txt'
+    out_filename = f'../out/out-{instance}.txt'
 
     new_lines = [f'{width} {height}\n', f'{n}\n']
 
@@ -59,8 +60,9 @@ def run_instance(inst: int, visualize=True):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--instance", help="number of the instance to run", default=1, type=int)
-    parser.add_argument("--visualize", help="visualize the result", action='store_true')
+    parser.add_argument("-i", "--instance", help="number of the instance to run", required=True, type=int)
+    parser.add_argument("-t", "--timeout", help="maximum time allowed to run the istance", type=int)
+    parser.add_argument("-v", "--visualize", help="visualize the result", action='store_true')
     args = parser.parse_args()
 
-    run_instance(args.instance, visualize=args.visualize)
+    run_instance(args.instance, timeout=args.timeout, visualize=args.visualize)

@@ -1,4 +1,5 @@
 include "cumulative.mzn";
+include "diffn.mzn";
 
 int: width;
 int: n;
@@ -15,9 +16,13 @@ var 1..max_height: height = max(Y_fin);
 
 constraint forall(i in 1..n)(Y_fin[i] = Y[i] + H[i]);
 
-constraint cumulative(Y, H, W, width);
+constraint diffn(X, Y, W, H);
 
-constraint cumulative(X, W, H, height);
+constraint cumulative(Y, H, W, width);
+constraint cumulative(X, W, H, height); % secondo me va cambiato questo
+
+constraint forall(i in 1..n)(X[i] + W[i] <= width); % forse è inutile o forse no
+% constraint che evita l'overlapping sull'asse x
 
 solve minimize height;
 
