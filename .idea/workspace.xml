@@ -1,53 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d08d9c21-99b7-46a5-b37a-0964a668aca3" name="Default Changelist" comment="">
+    <list default="true" id="7c9442b4-63a5-4287-bea5-0a8eccdbcdb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zumo0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/csv/chuffed.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/csv/chuffed_rotation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/csv/gecode.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/csv/gecode_raw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/csv/gecode_rotation.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/out_rot/out-2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/out_rot/out-3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/out_rot/out-4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/out_rot/out-5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/src/model.mzn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/src/model_rotation.mzn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cp/src/temp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out/out-10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out/out-11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out/out-3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/src/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/src/visualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trash/model_2.mzn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trash/test/berte.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VLSI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VLSI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-10.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-13.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-14.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-15.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-16.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-17.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-32.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-33.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-37.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-38.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-39.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-5.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/out/out-7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/out/out-9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out/out-9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/src/cumulative_global.mzn" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/cumulative_global.mzn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/src/all_instances.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/all_instances.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/src/cumulative_global.mzn" beforeDir="false" afterPath="$PROJECT_DIR$/trash/cumulative_global.mzn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/src/run_all.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cp/src/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/instances/ins-9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/out/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_rot/out-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/out/out-11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sat/src/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smt/out/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out/out-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trash/test_symmetry.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/test_symmetry.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1yJeFzsfl7rrkbwIhhv311LrsmH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1yRa355vOZItKZBCOG5Qc3ZdCfM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zumo0\Documents\MasterAI\AI_1_2\CO\Mod_1_project\VLSI\trash" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="VLSI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cp/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cp/src/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.temp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d08d9c21-99b7-46a5-b37a-0964a668aca3" name="Default Changelist" comment="" />
-      <created>1631974018443</created>
+      <changelist id="7c9442b4-63a5-4287-bea5-0a8eccdbcdb2" name="Default Changelist" comment="" />
+      <created>1632216651772</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631974018443</updated>
+      <updated>1632216651772</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

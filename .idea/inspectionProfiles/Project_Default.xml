@@ -79,6 +79,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="list.__getitem__" />
+          <option value="pygame.sprite.Sprite.*" />
         </list>
       </option>
     </inspection_tool>

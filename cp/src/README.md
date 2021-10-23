@@ -2,32 +2,29 @@
 
 ## To run a single instance
 
-usage: run.py [-h] -i INSTANCE [-t TIMEOUT] [-v]
+```
+usage: run.py [-h] [-r] [-c] [-t TIMEOUT] [-v] instance
+
+positional arguments:
+  instance              number of the instance to run
 
 optional arguments:
   -h, --help            show this help message and exit
-  -i INSTANCE, --instance INSTANCE
-                        number of the instance to run
+  -r, --allow_rotation  allow rotation of chips
+  -c, --use_chuffed     use chuffed solver
   -t TIMEOUT, --timeout TIMEOUT
-                        maximum time allowed to run the istance
+                        timeout to solve the instance
   -v, --visualize       visualize the result
+```
 
-## To visualize the result of an istance
+## To visualize the result of an instance
 
-usage: visualize.py [-h] -i INSTANCE
+```
+usage: visualize.py [-h] instance
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -i INSTANCE, --instance INSTANCE
-                        number of the instance to visualize
-
-## To run or visualize all the instances
-
-usage: all_instances.py [-h] [-r] [-t TIMEOUT] [-v]
+positional arguments:
+  instance    number of the instance to visualize
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -r, --run_all         run all the instances
-  -t TIMEOUT, --timeout TIMEOUT
-                        timeout for each instance
-  -v, --visualize_all   visualize all the instances
+  -h, --help  show this help message and exit
+```
