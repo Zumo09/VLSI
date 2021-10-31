@@ -12,11 +12,11 @@ def run_all(last, timeout):
 
 
 def visualize_all():
-    path = '../cp/out'
+    path = '../cp/out_gecode'
     files = os.listdir(path)
 
     for i in range(1, 41):
-        filename = f'out-{i}.txt'
+        filename = f'out_gecode-{i}.txt'
         if filename in files:
             visualize_instance(f'{path}/{filename}')
 

@@ -24,7 +24,7 @@ constraint forall(i in 1..n)(
 % minimum and maximum height
 int: h_min_area = ceil(sum(area)/width);
 
-int: h_min = max(chip_h ++ chip_w ++ [h_min_area]);
+int: h_min = max(chip_h ++ [h_min_area]);
 int: h_max = 2*h_min;
 
 % objective

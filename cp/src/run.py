@@ -16,7 +16,7 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
     chip_w = []
     chip_h = []
 
-    for i in range(2, 2+n):
+    for i in range(2, 2 + n):
         w, h = lines[i].split()
         chip_w.append(int(w))
         chip_h.append(int(h))
@@ -44,19 +44,19 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
 
     print(f'Running instance {instance}{" with rotation allowed " if allow_rotation else " "}'
           f'using {"chuffed" if use_chuffed else "gecode"} solver (timeout {timeout} min)')
-    # Solve the instance
-    result = problem_instance.solve(timeout=datetime.timedelta(minutes=timeout))
-
-    # Output
     try:
+        # Solve the instance
+        result = problem_instance.solve(timeout=datetime.timedelta(minutes=timeout))
+
+        # Output
         height = result['height']
         chip_x = result['x']
         chip_y = result['y']
 
         delta_t = result.statistics["solveTime"].total_seconds()
-    except KeyError:
+    except (KeyError, KeyboardInterrupt):
         print('No solution found within time limit.')
-        return 0, timeout*60
+        return 0, timeout * 60
 
     print(f'Solution: height = {height} (found in {delta_t:.3f} s)')
 
@@ -67,7 +67,7 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
                 chip_h[i], chip_w[i] = chip_w[i], chip_h[i]
 
     # Write solution to file
-    out_filename = f'../{"out_rot" if allow_rotation else "out"}/out-{instance}.txt'
+    out_filename = f'../out_{"rot_" if allow_rotation else ""}{"chuff" if use_chuffed else "gecode"}/out-{instance}.txt'
     new_lines = [f'{width} {height}\n', f'{n}\n']
     for w, h, x, y in zip(chip_w, chip_h, chip_x, chip_y):
         new_lines.append(f'{w} {h} {x} {y}\n')

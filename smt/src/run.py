@@ -49,7 +49,6 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
     opt.add(height >= h_min)
     opt.add(height <= h_max)
 
-    r = []
     if allow_rotation:
         # Height and width variables
         w = [Int(f'w_{i}') for i in range(n)]
@@ -59,27 +58,28 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
         r = [Int(f'r_{i}') for i in range(n)]
 
         # Rotation constraint
-        rot = [Or(r[i] == 0, r[i] == 1) for i in range(n)]  # Makes r a binary variable
-        rot_w = [w[i] == (1 - r[i]) * chip_w[i] + r[i] * chip_h[i] for i in range(n)]
-        rot_h = [h[i] == r[i] * chip_w[i] + (1 - r[i]) * chip_h[i] for i in range(n)]
-        opt.add(rot)
-        opt.add(rot_w)
-        opt.add(rot_h)
+        opt.add([Or(r[i] == 0, r[i] == 1) for i in range(n)])  # Makes r a binary variable
+        opt.add([w[i] == (1 - r[i]) * chip_w[i] + r[i] * chip_h[i] for i in range(n)])
+        opt.add([h[i] == r[i] * chip_w[i] + (1 - r[i]) * chip_h[i] for i in range(n)])
+
+        # No rotation for square circuits
+        opt.add([Or(w[i] != h[i], r[i] == 0) for i in range(n)])
+        # When two circuits have the same dimensions but swapped, it avoids
+        # to rotate both and obtain the same circuits
+        opt.add([Implies(And(chip_w[i] == chip_h[j], chip_h[i] == chip_w[j]),
+                         Not(And(r[i] == 1, r[j] == 1))) for i in range(n) for j in range(n)])
     else:
         w = chip_w
         h = chip_h
 
     # No overlapping constraint
-    no_overlapping = [Or(i == j, Or(x[i] + w[i] <= x[j], x[j] + w[j] <= x[i],
-                                    y[i] + h[i] <= y[j], y[j] + h[j] <= y[i]))
-                      for i in range(n) for j in range(n)]
-    opt.add(no_overlapping)
+    opt.add([Or(x[i] + w[i] <= x[j], x[j] + w[j] <= x[i],
+                y[i] + h[i] <= y[j], y[j] + h[j] <= y[i])
+             for i in range(n) for j in range(n) if i < j])
 
     # Containment constraint
-    cont_row = [And(0 <= x[i], x[i] + w[i] <= width) for i in range(n)]
-    cont_col = [And(0 <= y[i], y[i] + h[i] <= height) for i in range(n)]
-    opt.add(cont_row)
-    opt.add(cont_col)
+    opt.add([And(0 <= x[i], x[i] + w[i] <= width) for i in range(n)])
+    opt.add([And(0 <= y[i], y[i] + h[i] <= height) for i in range(n)])
 
     # Cumulative constraints
     for col in range(width):
@@ -97,19 +97,8 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
         opt.add(sum_w < width)
 
     # Symmetry breaking constraint - Steinberg
-    sym1 = [x[max_area_idx] <= 1 + (width - w[max_area_idx]) / 2,
-            y[max_area_idx] <= 1 + (height - h[max_area_idx]) / 2]
-    opt.add(sym1)
-
-    if allow_rotation:
-        # No rotation for square circuits
-        no_rot = [Or(w[i] != h[i], r[i] == 0) for i in range(n)]
-        opt.add(no_rot)
-        # When two circuits have the same dimensions but swapped, it avoids
-        # to rotate both and obtain the same circuits
-        sym2 = [Implies(And(chip_w[i] == chip_h[j], chip_h[i] == chip_w[j]),
-                        Not(And(r[i] == 1, r[j] == 1))) for i in range(n) for j in range(n)]
-        opt.add(sym2)
+    opt.add([x[max_area_idx] <= 1 + (width - w[max_area_idx]) / 2,
+             y[max_area_idx] <= 1 + (height - h[max_area_idx]) / 2])
 
     t_start = process_time()
     opt.minimize(height)
