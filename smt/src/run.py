@@ -41,8 +41,6 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
     # minimum and maximum height
     h_min_area = np.ceil(np.sum(area) / width)
     h_min = max(np.max(chip_h), h_min_area)
-    if allow_rotation:
-        h_min = max(np.max(chip_w), h_min)
     h_min = int(h_min)
     h_max = 2 * h_min
 

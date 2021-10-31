@@ -20,121 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c9442b4-63a5-4287-bea5-0a8eccdbcdb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cp/csv/gecode_rotation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_gecode/out-10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_gecode/out-11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_gecode/out-20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_gecode/out-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-17.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-18.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-26.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-27.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-28.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-30.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-33.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cp/out_rot_gecode/out-9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/csv/out.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-17.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-18.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-22.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-24.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-26.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-27.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-28.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-31.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-33.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-36.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/out/out-9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smt/src/temp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smt/out_rot/out-9.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/csv/gecode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cp/csv/gecode.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/csv/gecode_raw.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-26.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-27.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-28.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-30.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-31.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-32.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-33.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-34.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-35.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-36.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-37.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-38.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-39.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-40.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out/out-9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cp/out_gecode/out-9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out_rot/out-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out_rot/out-2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out_rot/out-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out_rot/out-4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/out_rot/out-5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/src/model_rotation.mzn" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/model_rotation.mzn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cp/src/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/temp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smt/out/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out/out-1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cp/src/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/cp/src/visualize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smt/out/out-10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out/out-10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smt/out/out-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out/out-11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smt/out/out-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out/out-3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smt/out_rot/out-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smt/out_rot/out-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smt/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/smt/src/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash/all_instances.py" beforeDir="false" afterPath="$PROJECT_DIR$/trash/all_instances.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smt/src/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/smt/src/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smt/src/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/smt/src/visualize.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

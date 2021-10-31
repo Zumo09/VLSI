@@ -5,7 +5,7 @@ from pandas._typing import FilePathOrBuffer
 from run import run_instance
 import pandas as pd
 
-allow_rotation = False
+allow_rotation = True
 
 print(f'ROTATION {"" if allow_rotation else "NOT "}ALLOWED')
 df = pd.DataFrame(columns=['Instance', 'Height', 'Time'])

@@ -38,6 +38,7 @@ def visualize_instance(filename):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("instance", help="number of the instance to visualize", type=int)
+    parser.add_argument("-f", "--folder", help="number of the instance to visualize", default="out", type=str)
     args = parser.parse_args()
 
-    visualize_instance(f'../out/out-{args.instance}.txt')
+    visualize_instance(f'../{args.folder}/out-{args.instance}.txt')
