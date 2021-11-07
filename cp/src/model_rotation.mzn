@@ -52,22 +52,37 @@ constraint y[max_area_idx] < 1 + (height - h[max_area_idx]) div 2;
 constraint forall(i in 1..n-1, j in 2..n where i<j)(
   (w[i]==w[j] /\ h[i]==h[j]) -> lex_less([x[i], y[i]], [x[j], y[j]]));
 
-% symmetry breaking 3
+% symmetry breaking - do not rotate both rectangle with the same dimension
 constraint forall(i in 1..n-1, j in 2..n where i != j)(
   (chip_w[i] == chip_h[j] /\ chip_h[i] == chip_w[j]) -> not(r[i]=1 /\ r[j]=1)
 );
 
-% symmetry breaking - don't rotate square chips
+% symmetry breaking - do not rotate square chips
 constraint forall(i in 1..n)(
   (chip_w[i] == chip_h[i]) -> r[i] = 0
 );
 
+
+% solve :: seq_search([
+%   int_search(y, smallest, indomain_min),
+%   int_search(x, first_fail, indomain_min),
+%   int_search([height], input_order, indomain_min),
+% ])
+
 solve :: seq_search([
-          int_search(y, smallest, indomain_min) :: int_search(x, first_fail, indomain_min),
-          int_search([height], input_order, indomain_min),
+  int_search(y, dom_w_deg, indomain_min),
+  int_search(x, dom_w_deg, indomain_min),
+  int_search(r, dom_w_deg, indomain_min),
+  int_search([height], input_order, indomain_min),
+  restart_luby(1000)
 ])
 
 minimize height;
+
+% output [concat(["\(width) \(height) \n"]),
+%         "\(n)\n",
+%         concat(["\(w[i]) \(h[i]) \(x[i]) \(y[i]) \n" | i in 1..n]),
+%         ];
 
         
         

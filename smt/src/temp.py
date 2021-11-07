@@ -7,6 +7,8 @@ import pandas as pd
 
 allow_rotation = True
 
+path: Union[FilePathOrBuffer[AnyStr], None] = f'../csv/out{"_rotation" if allow_rotation else  ""}.csv'
+
 print(f'ROTATION {"" if allow_rotation else "NOT "}ALLOWED')
 df = pd.DataFrame(columns=['Instance', 'Height', 'Time'])
 for instance in range(1, 41):
@@ -27,6 +29,4 @@ for instance in range(1, 41):
     mean = sum(times)/len(times)
     print(f'\n\nInstance {instance}: time = {mean}\n\n\n')
     df = df.append({'Instance': instance, 'Run': None, 'Height': None, 'Time': mean}, ignore_index=True)
-
-path: Union[FilePathOrBuffer[AnyStr], None] = f'../csv/out{"_rotation" if allow_rotation else  ""}.csv'
-df.to_csv(path, sep=';')
+    df.to_csv(path, sep=';')

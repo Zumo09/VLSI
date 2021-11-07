@@ -94,7 +94,7 @@ if not rotation:
 
 if rotation:
 
-    # Height and width variables
+    # Height and W variables
     w = [Int("w_%s" % i) for i in range(n)]
     h = [Int("h_%s" % i) for i in range(n)]
 

@@ -48,7 +48,7 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
     opt.add(height <= h_max)
 
     if allow_rotation:
-        # Height and width variables
+        # Height and W variables
         w = [Int(f'w_{i}') for i in range(n)]
         h = [Int(f'h_{i}') for i in range(n)]
 
@@ -116,7 +116,7 @@ def run_instance(instance: int, allow_rotation=False, timeout=5, visualize=True)
         print(f'Solution: height = {height} (found in {delta_t:.3f} s)')
 
         # Write solution to file
-        out_filename = f'../{"out_rot" if allow_rotation else "out"}/out-{instance}.txt'
+        out_filename = f'../{"out" if allow_rotation else "out_rot"}/out-{instance}.txt'
         new_lines = [f'{width} {height}\n', f'{n}\n']
         for w, h, x, y in zip(chip_w, chip_h, chip_x, chip_y):
             new_lines.append(f'{w} {h} {x} {y}\n')

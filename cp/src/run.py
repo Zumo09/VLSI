@@ -28,8 +28,10 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
         model = Model('./model.mzn')
 
     # Find the MiniZinc solver configuration
+    solve_kwargs = {'timeout': datetime.timedelta(minutes=timeout)}
     if use_chuffed:
         solver = Solver.lookup('chuffed')
+        solve_kwargs['free_search'] = True  # as suggested by the minizinc documentation
     else:
         solver = Solver.lookup('gecode')
 
@@ -46,7 +48,7 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
           f'using {"chuffed" if use_chuffed else "gecode"} solver (timeout {timeout} min)')
     try:
         # Solve the instance
-        result = problem_instance.solve(timeout=datetime.timedelta(minutes=timeout))
+        result = problem_instance.solve(**solve_kwargs)
 
         # Output
         height = result['height']
@@ -54,7 +56,12 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
         chip_y = result['y']
 
         delta_t = result.statistics["solveTime"].total_seconds()
-    except (KeyError, KeyboardInterrupt):
+        print('Failures:', result.statistics['failures'])
+        print('Restarts:', result.statistics['restarts'])
+    except KeyError:
+        print('No solution found within time limit.')
+        return 0, timeout * 60
+    except KeyboardInterrupt:
         print('No solution found within time limit.')
         return 0, timeout * 60
 
@@ -67,7 +74,9 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
                 chip_h[i], chip_w[i] = chip_w[i], chip_h[i]
 
     # Write solution to file
-    out_filename = f'../out_{"rot_" if allow_rotation else ""}{"chuff" if use_chuffed else "gecode"}/out-{instance}.txt'
+    dir_name = f'out_{"chuffed" if use_chuffed else "gecode"}{"_rot" if allow_rotation else ""}'
+    out_filename = f'../{dir_name}/out-{instance}.txt'
+
     new_lines = [f'{width} {height}\n', f'{n}\n']
     for w, h, x, y in zip(chip_w, chip_h, chip_x, chip_y):
         new_lines.append(f'{w} {h} {x} {y}\n')

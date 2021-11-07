@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/cp/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sat/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/smt/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/trash/cp_trash/src" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (minizinc-z3)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

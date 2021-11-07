@@ -15,7 +15,7 @@ def visualize_instance(filename):
     w, h = int(w), int(h)
     n = int(lines[1])
 
-    ax.set_title(f'Instance {filename[11:-4]} (h = {h})')
+    ax.set_title(f'Instance {filename[-6:-4]} (h = {h})')
     ax.set_xticks(range(w + 1))
     ax.set_yticks(range(h + 1))
     ax.axis('equal')
@@ -38,7 +38,7 @@ def visualize_instance(filename):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("instance", help="number of the instance to visualize", type=int)
-    parser.add_argument("-f", "--folder", help="number of the instance to visualize", default="out", type=str)
+    parser.add_argument("-f", "--folder", help="folder name", default="out_gecode", type=str)
     args = parser.parse_args()
 
     visualize_instance(f'../{args.folder}/out-{args.instance}.txt')

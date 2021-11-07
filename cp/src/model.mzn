@@ -44,12 +44,28 @@ constraint y[max_area_idx] < 1 + (height - h[max_area_idx]) div 2;
 constraint forall(i in 1..n-1, j in 2..n where i<j)(
   (w[i]==w[j] /\ h[i]==h[j]) -> lex_less([x[i], y[i]], [x[j], y[j]]));
 
+
+% solve :: seq_search([
+%   int_search(y, smallest, indomain_min),
+%   int_search(x, first_fail, indomain_min),
+%   int_search([height], input_order, indomain_min),
+% ])
+
 solve :: seq_search([
-          int_search(y, smallest, indomain_min) :: int_search(x, first_fail, indomain_min),
-          int_search([height], input_order, indomain_min),
+  int_search(y, dom_w_deg, indomain_min),
+  int_search(x, dom_w_deg, indomain_min),
+  int_search([height], input_order, indomain_min),
+  % restart_luby(100)
 ])
 
+% solve
+
 minimize height;
+
+% output [concat(["\(width) \(height) \n"]),
+%         "\(n)\n",
+%         concat(["\(w[i]) \(h[i]) \(x[i]) \(y[i]) \n" | i in 1..n]),
+%         ];
 
         
         
