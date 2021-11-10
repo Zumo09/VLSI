@@ -1,3 +1,4 @@
+import os
 import argparse
 import matplotlib.pyplot as plt
 
@@ -5,6 +6,10 @@ from matplotlib.patches import Rectangle
 
 
 def visualize_instance(filename):
+    if not os.path.isfile(filename):
+        print(f'Solution not found in "{filename}"')
+        return
+
     colors = ['b', 'g', 'r', 'c', 'm', 'y']
 
     with open(filename, 'r') as file:
@@ -38,7 +43,7 @@ def visualize_instance(filename):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("instance", help="number of the instance to visualize", type=int)
-    parser.add_argument("-f", "--folder", help="folder name", default="out_gecode", type=str)
+    parser.add_argument("-r", "--rotation", help="solutions with rotation", action='store_true')
     args = parser.parse_args()
 
-    visualize_instance(f'../{args.folder}/out-{args.instance}.txt')
+    visualize_instance(f'../out{"_rot" if args.rotation else ""}/out-{args.instance}.txt')

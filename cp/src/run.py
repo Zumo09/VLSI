@@ -74,8 +74,7 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
                 chip_h[i], chip_w[i] = chip_w[i], chip_h[i]
 
     # Write solution to file
-    dir_name = f'out_{"chuffed" if use_chuffed else "gecode"}{"_rot" if allow_rotation else ""}'
-    out_filename = f'../{dir_name}/out-{instance}.txt'
+    out_filename = f'../out{"_rot" if allow_rotation else ""}/out-{instance}.txt'
 
     new_lines = [f'{width} {height}\n', f'{n}\n']
     for w, h, x, y in zip(chip_w, chip_h, chip_x, chip_y):

@@ -20,11 +20,12 @@ optional arguments:
 ## To visualize the result of an instance
 
 ```
-usage: visualize.py [-h] instance
+usage: visualize.py [-h] [-r] instance
 
 positional arguments:
-  instance    number of the instance to visualize
+  instance        number of the instance to visualize
 
 optional arguments:
-  -h, --help  show this help message and exit
+  -h, --help      show this help message and exit
+  -r, --rotation  solutions with rotation
 ```
