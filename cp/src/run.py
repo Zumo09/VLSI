@@ -75,6 +75,7 @@ def run_instance(instance: int, allow_rotation=False, use_chuffed=False, timeout
 
     # Write solution to file
     dir_name = f'out_{"chuffed" if use_chuffed else "gecode"}{"_rot" if allow_rotation else ""}'
+    # dir_name = f'out{"_rot" if allow_rotation else ""}'
     out_filename = f'../{dir_name}/out-{instance}.txt'
 
     new_lines = [f'{width} {height}\n', f'{n}\n']

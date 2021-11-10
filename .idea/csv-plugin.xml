@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\cp\csv\gecode.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\smt\csv\out.csv">
           <value>
             <Attribute>
